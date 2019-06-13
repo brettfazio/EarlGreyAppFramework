@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.license = { :type => "Apache 2.0", :file => "LICENSE" }
   s.source = { :http => "https://www.github.com/brettfazio/EarlGreyAppFramework/releases/download/0.0.1/EarlGrey.zip" }
 
+  s.pod_target_xcconfig = { "FRAMEWORK_SEARCH_PATHS" =>"$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks" }
   
   s.vendored_frameworks = "EarlGrey/AppFramework.framework"
 
