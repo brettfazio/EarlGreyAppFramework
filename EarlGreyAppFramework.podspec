@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { "FRAMEWORK_SEARCH_PATHS" =>"$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks" }
   
-  s.vendored_frameworks = "EarlGrey/AppFramework.framework"
+  s.vendored_frameworks = "EarlGrey/AppFramework.framework", "AppFramework.framework"
 
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.10"
