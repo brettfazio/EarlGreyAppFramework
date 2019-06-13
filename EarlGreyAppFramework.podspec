@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source = { :http => "https://www.github.com/brettfazio/EarlGreyAppFramework/releases/download/0.0.1/EarlGrey.zip" }
 
   
-  s.vendored_frameworks = "AppFramework.framework"
+  s.vendored_frameworks = "EarlGrey/AppFramework.framework"
 
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.10"
